@@ -1,0 +1,15 @@
+{
+  "background_color": "white",
+  "description": "Florida Population Density",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "Florida Population Density",
+  "short_name": "Florida!",
+  "start_url": "/"
+}

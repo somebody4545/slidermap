@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="manifest" href="manifest.webmanifest">
+	<link rel="apple-touch-icon" href="/icon.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="coolblob.png">
+
+     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <title>Florida!</title> <!--must be short cos tabs are not that long-->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Some enable javascript code I ripped off from the internet -->
+<noscript class="noscript">
+   <div id="div100">
+   Please enable javascript in your browser
+   </div>
+</noscript>
+
+<style>
+   body{
+      position:relative;
+   }
+   .noscript {
+      width:100%;
+      height:100%; /* will cover the text displayed when javascript is enabled*/
+      z-index:100000; /* higher than other z-index */
+      position:absolute;
+   }
+   .noscript #div100{
+       display:block;
+       height:100%;
+       background-color:white; 
+   }
+</style> 
+
+	
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-3">Florida Population Density</h1>
+			      <p>Site made by Inesh and Skyler. Research by Avnish <small>(This took forever lol)</small></p>
+            <p class="lead">From 1790 - 1890 | <a href="https://lwsd-my.sharepoint.com/:w:/g/personal/s-indey_lwsd_org/ESZfqmsliTZCuCtMX0wV1ZwB1ABCp3nr5CA_bnXGYp8klQ?e=L3rjw0"><small>Works Cited</small></a></p>
+            <hr class="my-2">
+            <p class="lead"></p> 
+            <div class="slidecontainer">
+			<div id='year'>
+			<p>Use arrow keys or drag slider to change year.</p>
+			<label for="myRange"><h4>Year: <span id="demo">enable javascript</span> </h4></label>
+			</div>
+			<input type="range" min="179" max="189" value="179" step=0.0001 class="slider" id="myRange">
+           
+            <div id="info-container" style="display:flex">
+
+              <label>
+                <input type="checkbox" id="cb1" />
+                <svg id="fl" version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve" sodipodi:docname="florida.svg" inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"><defs id="defs14"></defs><sodipodi:namedview id="namedview12" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" showgrid="false" inkscape:zoom="0.58265599" inkscape:cx="798.92769" inkscape:cy="311.50456" inkscape:window-width="2560" inkscape:window-height="1009" inkscape:window-x="1912" inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:current-layer="g8"></sodipodi:namedview>
+                    <metadata id="metadata2"> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                    <g id="g8"><g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)" id="g6"><path id="flpath" d="m 6463.8,4227 c -28.5,-24.5 -67.3,-55 -89.7,-69.3 -34.6,-26.5 -36.7,-32.6 -4.1,-124.3 18.3,-53 32.6,-104 32.6,-114.2 0,-8.2 -71.3,-16.3 -157,-16.3 -87.7,0 -222.2,-10.2 -297.6,-20.4 -75.4,-12.2 -589.1,-46.9 -1141.5,-79.5 -1011,-59.1 -1318.8,-61.2 -1386.1,-6.1 -16.3,14.3 -69.3,85.6 -116.2,157 l -83.6,128.4 -197.7,16.3 c -169.2,12.2 -328.2,0 -1084.4,-83.6 -864.3,-93.8 -1793.8,-207.9 -1806,-218.1 -2,-4.1 -12.2,-93.8 -18.3,-201.8 L 100,3399.4 234.5,3279.1 369,3158.8 V 2904 c 0,-140.6 8.1,-267 18.3,-283.3 24.5,-38.7 340.4,16.3 562.6,97.8 91.7,32.6 230.3,65.2 316,71.3 83.6,8.2 218.1,22.4 297.6,34.7 128.4,18.3 169.2,14.3 346.5,-30.6 212,-51 587.1,-214 691,-299.6 34.7,-28.5 99.9,-67.3 146.8,-87.6 97.8,-42.8 104,-57.1 122.3,-218.1 18.3,-177.3 20.4,-179.4 203.8,-104 120.3,48.9 189.6,65.2 283.3,65.2 146.8,0 297.6,71.3 481.1,226.3 106,93.8 122.3,99.9 226.3,99.9 h 110.1 l 57.1,142.7 c 53,130.5 63.2,142.7 116.2,142.7 32.6,0 91.7,-16.3 134.5,-38.7 40.8,-20.4 124.3,-53 181.4,-71.3 93.8,-30.6 116.2,-48.9 173.3,-144.7 46.9,-79.5 85.6,-116.2 140.6,-138.6 61.1,-24.5 79.5,-46.9 104,-118.2 24.4,-77.5 44.8,-97.8 146.7,-152.9 79.5,-42.8 132.5,-87.6 161,-138.6 44.9,-75.4 108,-104 379.1,-171.2 55.1,-12.2 81.5,-36.7 116.2,-104 26.5,-46.9 75.4,-118.2 108,-157 l 63.2,-71.3 v -271.1 c 0,-220.2 -8.1,-293.5 -40.8,-391.4 -32.6,-89.7 -38.7,-146.8 -30.6,-222.2 20.4,-152.9 99.9,-432.1 169.2,-583 53,-116.2 57.1,-138.6 32.6,-171.2 -16.3,-20.4 -28.6,-44.8 -28.6,-51 0,-6.2 93.8,-114.2 210,-240.5 142.7,-154.9 242.6,-285.4 309.8,-405.6 55,-97.8 136.6,-230.3 181.4,-291.5 46.9,-63.2 114.1,-187.5 150.8,-279.3 73.4,-179.4 71.3,-175.3 260.9,-201.8 69.3,-8.1 110.1,-4.1 118.2,10.2 8.1,12.2 20.4,22.4 28.5,22.4 30.6,0 85.6,-120.3 106,-228.3 20.4,-104 53,-161 277.2,-470.9 l 85.6,-118.2 57.1,93.8 c 67.3,106 120.3,116.2 226.3,51 142.7,-85.6 258.9,-295.6 291.5,-527.9 22.4,-148.8 34.6,-177.3 89.7,-228.3 34.6,-32.6 101.9,-71.3 150.8,-87.7 79.5,-28.5 93.8,-26.5 193.7,12.2 57.1,24.5 124.4,59.1 146.8,77.5 48.9,40.8 112.1,65.2 112.1,44.8 0,-46.9 -509.6,-391.4 -578.9,-391.4 -14.3,0 -67.3,14.3 -120.3,32.6 l -93.8,32.6 -118.2,-81.5 c -65.2,-44.8 -132.5,-104 -146.8,-134.5 -20.4,-36.7 -57.1,-61.2 -112.1,-75.4 -218.1,-55 -328.2,-87.7 -336.3,-93.8 -6.1,-4.1 61.2,-79.5 150.8,-169.2 l 159,-161 118.2,61.1 c 169.2,83.6 652.3,246.7 703.2,234.4 51,-14.3 544.2,364.9 744,572.8 116.2,120.3 142.7,163.1 201.8,322.1 36.7,101.9 87.6,224.2 112.1,275.2 36.7,75.4 46.9,140.6 57.1,362.8 10.2,197.7 6.1,267 -10.2,256.8 -16.3,-10.2 -18.3,16.3 -10.2,93.8 8.2,61.2 4.1,124.3 -8.1,146.8 -12.2,22.4 -30.6,212 -40.8,421.9 -8.2,207.9 -34.7,483.1 -57.1,609.5 -36.7,212 -51,250.7 -177.3,479 -77.5,136.6 -187.5,330.2 -246.7,428.1 -61.2,99.9 -146.8,256.8 -191.6,346.5 -46.9,91.7 -118.2,203.8 -163.1,248.7 -69.3,73.4 -201.8,340.4 -201.8,405.6 0,12.2 28.6,55 59.1,93.8 l 59.1,71.3 -71.3,132.5 c -46.9,85.6 -138.6,197.7 -258.9,316 -285.4,279.3 -368.9,393.4 -638,866.3 -260.9,458.6 -385.2,746.1 -548.3,1276 l -75.4,246.7 -216.1,12.2 c -118.2,8.2 -297.6,18.4 -399.5,24.5 -166.7,10.1 -187.1,8.1 -234,-32.7 z" sodipodi:nodetypes="cccssccccccccccccscccccccccscsccscccccccccccsccccsccccccsccccccccccssccccccccccccccsccccccccscccccccccc" style="fill: rgb(189, 189, 189); stroke: rgb(151, 151, 151);"></path></g></g>
+                </svg>
+            <div>
+				<h5>Key:</h5>
+			<div class = 'key' id="key"></div>
+				<div id='keyholder' class='row'>
+				<p class='keynumber col-4' id='minnumber'>0 </p> 
+				<p class='keynumber col-4' id='midnumber'>0 </p>
+				<p class='keynumber col-4' id='maxnumber'></p>
+				</div>
+
+				
+				<div class = 'key' id="nonekey"></div><div id='keyholder'><p class='keynumber'>No Recorded Data</p>
+			</div>
+				</div>
+              </label>
+                  
+
+                <div id="map_canvas"></div>
+                <div id="info" style="width:40%; margin-left:5%">
+					<h5><br>Population Density: <br><br> <h1 id='density'>enable javascript to see!</h1> <h6 id="ppl" >People per square mile</h6><br></h5>
+					<h4 id='population'>enable javascript to see!</h4> <h6 id="populationppl" >Total Population</h6><br></h5>
+					<h5>About This Decade:</h5>
+					<p id='about'>enable javascript to see!<br><br></p>
+					
+				</div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
