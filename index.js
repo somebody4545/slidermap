@@ -141,7 +141,7 @@ var data = [
 
   	// 1890
 	{
-		population: 1000, about: "Violence against African Americans reaches it's peak in Florida"
+		population: 391422, about: "Violence against African Americans reaches it's peak in Florida"
 	},
 	
 	
