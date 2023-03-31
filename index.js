@@ -88,62 +88,10 @@ darken = function(color) {
 
 // Current data is a placeholder (not really anymore)
 var data = [
-	
-	// 1790
 	{
-		about: '1795: (Spain owns Florida) With the Treaty of San Lorenzo, U.S. and Spain recognized the 31st parallel as the northern boundary of Florida.'
-	},
-	
-	// 1800
-	{
-		about: 'During this time, the US toops began to wage war with the Native American population'
-	},
-
-	// 1810
-	{
-		about: 'Florida declared independence from Spain'
-	},
-  
-	// 1820
-	{
-		about: 'President James Monroe was authorized on March 3, 1821, to take possession of East Florida and West Florida for the United States and provide for initial governance. (From Wikipedia)'
-	},
-
-	// 1830
-	{
-		population: 34730, about: 'The second Seminole war took place from 1835-42'
-	},
-  
-	// 1840
-	{
-		population: 54477, about: 'Florida was admitted to the Union as the 27th U.S. state and nicknamed the Sunshine State.'
-	},
-  
-	// 1850
-	{
-		population: 87445, about: 'A scientist discovered how to make ice through a refrigeration process, which allowed for preservation of perishable foods'
-	},
-  
-	// 1860
-	{
-		population: 140424, about: 'Close to half of the people that inhabited florida were enslaved'
-	},
-	
-  	// 1870
-	{
-		population: 187748, about: 'Compromise of 1877 which completed withdrawl of troops from florida (aftermath of civil war)'
-	},
-
-  	// 1880
-	{
-		population: 269493, about: 'Florida’s first telephone exchange opened in Jacksonvill'
-	},
-
-  	// 1890
-	{
-		population: 391422, about: "Violence against African Americans reaches it's peak in Florida"
-	},
-	
+		about: "Marco Polo", 
+		
+	}
 	
 ];
 
