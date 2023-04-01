@@ -14,8 +14,9 @@ body {
   -ms-user-select: none;
   user-select: none;
 	background-size: 100%;
-	background-image: url('white.jpg');
-	background-color: darkgray;
+	/* background-image: url('white.jpg'); */
+  /* use a sepia-like color */
+	background-color: #f6e0cb;
 	
 }
 input[type=checkbox]:checked + label:after {
