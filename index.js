@@ -20,7 +20,7 @@ var minNumber = document.getElementById("minnumber");
 var stateSize = 65755
 var keyRound = -1
 var populationElement = document.getElementById("population");
-
+var map = document.getElementById("map");
 function sleep(ms) {
 	return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -90,16 +90,18 @@ darken = function (color) {
 var data = [
 	{
 		type: "person",
+		image: "/icons/person.svg",
 		start: 1254,
 		end: 1324,
 		name: "Marco Polo", 
 		description:
 		"Goofy ahh sailor dude"
 		,
-		x: 100, 
-		y: 200,
+		x: 50, 
+		y: 50,
 
-	}
+	}, 
+	
 
 ];
 
@@ -133,9 +135,14 @@ function update() {
 	numberConverted = number * 10
 	index = number - slider.min
 	output.innerHTML = numberConverted
+	map.innerHTML =
+	'<img src="world.svg"></img>'
 	// for each item in data, console log its info when its range shows up in slider
 	for (var i = 0; i < dataLength; i++) {
 		if (data[i]['start'] <= numberConverted && data[i]['end'] >= numberConverted) {
+			// place image inside with icon 
+			map.innerHTML += 
+			'<img src="' + data[i]['image'] + '" style="position:absolute; top: ' + data[i]['y'] + '%; left: ' + data[i]['x'] + '%; width: 5%; height: 5%; z-index: 1000;">'
 			console.log(data[i]['name'] + " was alive between " + data[i]['start'] + " and " + data[i]['end'] + ". " + data[i]['description'])
 		}
 	}
