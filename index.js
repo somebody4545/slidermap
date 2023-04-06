@@ -1,14 +1,53 @@
 // Slider crap
 
+
+// Data that will be used
+var data = [
+	{
+		type: "Person",
+		image: "./icons/person.svg",
+		start: 1254,
+		end: 1324,
+		name: 'Marco Polo', 
+		description:
+		"Person who sailed a long distance or something"
+		,
+		x: 50, 
+		y: 50,
+		percentsize: 5,
+
+	}, 
+	{
+		type: "Pandemic",
+		image: "./icons/virus.svg",
+		start: 1346,
+		end: 1353,
+		name: 'The Black Death',
+		description:
+		"A pandemic that killed a lot of people",
+		x: 40,
+		y: 40,
+		percentsize: 30,
+	},
+	
+
+];
+
+
+
+
+
+
+
 //Defining variables
 var number = 0
 var index = 0
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
-var densityElement = document.getElementById("density");
-var ppl = document.getElementById("ppl");
-var aboutElement = document.getElementById("about");
-var floridaElement = document.getElementById("flpath");
+var title = document.getElementById("title");
+var time = document.getElementById("time");
+var type = document.getElementById("type");
+var about = document.getElementById("about");
 var firstColor = '#ffdd00'
 var secondColor = '#fc0000' //#8031ff is the purple one
 var noneColor = "#bdbdbd"
@@ -21,6 +60,10 @@ var stateSize = 65755
 var keyRound = -1
 var populationElement = document.getElementById("population");
 var map = document.getElementById("map");
+var mapitems = document.getElementsByClassName("mapitem");
+var abouttext = document.getElementById("abouttext");
+var abouttextinner = abouttext.innerHTML;
+var increment = 1;
 function sleep(ms) {
 	return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -87,25 +130,8 @@ darken = function (color) {
 }
 
 // Current data is a placeholder (not really anymore)
-var data = [
-	{
-		type: "person",
-		image: "/icons/person.svg",
-		start: 1254,
-		end: 1324,
-		name: "Marco Polo", 
-		description:
-		"Goofy ahh sailor dude"
-		,
-		x: 50, 
-		y: 50,
-
-	}, 
-	
-
-];
-
-slider.max = 150
+slider.min = 300/increment
+slider.max = 1500/increment
 
 
 var dataLength = data.length;
@@ -129,52 +155,52 @@ round = (10 ** keyRound)
 // maxNumber.innerHTML = "≈" + separator(Math.round(maxPopulation / round) * round)
 // midNumber.innerHTML = "≈" + separator((Math.round(maxPopulation / round) * round) / 2)
 // // ugly code
-
 function update() {
+	mapitems = document.getElementsByClassName("mapitem");
+	console.log(mapitems);
 	number = Math.round(number)
-	numberConverted = number * 10
+	numberConverted = number * increment
 	index = number - slider.min
 	output.innerHTML = numberConverted
 	map.innerHTML =
 	'<img src="world.svg"></img>'
 	// for each item in data, console log its info when its range shows up in slider
+	//also, align image to center of
 	for (var i = 0; i < dataLength; i++) {
 		if (data[i]['start'] <= numberConverted && data[i]['end'] >= numberConverted) {
-			// place image inside with icon 
+			// place image inside with icon, set alt to name
 			map.innerHTML += 
-			'<img src="' + data[i]['image'] + '" style="position:absolute; top: ' + data[i]['y'] + '%; left: ' + data[i]['x'] + '%; width: 5%; height: 5%; z-index: 1000;">'
+			'<img class="mapitem" src="' + data[i]['image'] + '" style="position:absolute; top: ' + data[i]['y'] + '%; left: ' + data[i]['x'] + '%; width: '+ data[i]['percentsize'] +'%; height: '+ data[i]['percentsize'] + '%; z-index: 1000; cursor: pointer;" alt="' + data[i]['name'] + '"></img>'
 			console.log(data[i]['name'] + " was alive between " + data[i]['start'] + " and " + data[i]['end'] + ". " + data[i]['description'])
 		}
+
 	}
-	// ppl.innerHTML = 'People per square mile'
-	// if (data[index]['density']!=undefined){data[index]['fill'] = getGradientColor(firstColor, secondColor, data[index]['density']/maxPopulation)} else {data[index]['fill'] = noneColor}
-	// try{densityElement.innerHTML = separator(data[index]['density'])} catch(error) {densityElement.innerHTML = 'No Data'}
-	// try{populationElement.innerHTML = separator(data[index]['population'])} catch(error) {populationElement.innerHTML = 'No Data'}
-	// try{aboutElement.innerHTML = data[index]['about']} catch(error) {aboutElement.innerHTML = 'No info about this time period has been found'}
-	// try{
-	// 	floridaElement.style.fill = data[index]['fill']
-	// 	floridaElement.style.stroke = darken(data[index]['fill'])
-	// } catch(error) {
-	// 	floridaElement.style.fill = noneColor
-
-	// }
-
-	// if (data[index]['density'] === undefined) {
-	// 	densityElement.innerHTML = 'No Data'
-	// 	ppl.innerHTML = '(Florida did not have a population census until 1830 and was not officially admitted as a state until 1845)'
-
-	// }
-	// if (data[index]['population'] === undefined) {
-	// 	populationElement.innerHTML = 'No Data'
-	// }
-	// if (data[index]['about'] === undefined || data[index]['about'] == '') {
-	// 	aboutElement.innerHTML = 'No info about this time period has been collected'
-	// }
-	// if (data[index]['fill'] === undefined) {
-	// 	floridaElement.style.fill = noneColor
-
-	// }
-
+	// if user clicked over a mapitem, show its info using title, time, type, and about
+	for (var i = 0; i < mapitems.length; i++) {
+		mapitems[i].onclick = function () {
+			for (var i = 0; i < dataLength; i++) {
+				if (data[i]['name'] == this.alt) {
+					title.innerHTML = data[i]['name']
+					time.innerHTML = data[i]['start'] + " - " + data[i]['end']
+					type.innerHTML = data[i]['type']
+					about.innerHTML = data[i]['description']
+					abouttext.innerHTML = "About"
+				}
+			}
+		}
+	}
+	// if the item whos description is being shown is not in the range, hide the description
+	for (var i = 0; i < dataLength; i++) {
+		if (data[i]['name'] == title.innerHTML) {
+			if (data[i]['start'] > numberConverted || data[i]['end'] < numberConverted) {
+				title.innerHTML = ""
+				time.innerHTML = ""
+				type.innerHTML = ""
+				about.innerHTML = ""
+				abouttext.innerHTML = abouttextinner
+			}
+		}
+	}
 }
 var bar = 'linear-gradient(to right'
 for (let i = 0; i < data.length; i++) {
@@ -225,7 +251,9 @@ document.onkeydown = function (event) {
 	}
 };
 
-
+onload = function () {
+	update()
+}
 
 // Ok so we have to do some DOM in HTML stuff I honestly don't know
 // Then once we get the data we can make the bar colorful and also make the image change color
