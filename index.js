@@ -7,7 +7,7 @@ var data = [
 		svg: "traderoutes",
 		name: "Indian Ocean Trade Routes",
 		description:
-			"All the common trade routes across the Indian Ocean during this time period",
+			"All the common trade routes across the Indian Ocean during the Post-Classical time period",
 		x: 0,
 		y: 0,
 		percentsize: 100,
@@ -346,7 +346,7 @@ function update() {
 					gtags[e].addEventListener("click", function () {
 							title.innerHTML = this.data['name']
 							if (this.data['start'] == null) {
-								time.innerHTML = "Before this era"
+								time.innerHTML = "Before the Post-Classical Era"
 							}
 							else if (this.data['end'] != null) {
 								time.innerHTML = '('+ this.data['start'] + "CE - " + this.data['end'] + "CE)"
