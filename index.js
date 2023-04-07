@@ -6,6 +6,8 @@ var data = [
 		type: "Routes",
 		svg: "traderoutes",
 		name: "Indian Ocean Trade Routes", 
+		start: 600, 
+		end: 1450,
 		description:
 			"All the common trade routes across the Indian Ocean during the Post-Classical time period",
 		x: 0,
@@ -13,7 +15,7 @@ var data = [
 		percentsize: 100,
 	},
 	{
-		type: "Nature",
+		type: "Natural Phenomenon",
 		svg: "monsoon",
 		name: "Monsoon Winds",
 		description:
@@ -102,7 +104,7 @@ var data = [
 		svg: "invention",
 		name: "Arab Dhow",
 		description:
-		"The Dhow has a triangluar sail and is held together by coir. This way, they would not break easily in shallow water. They were used all over the Indian Ocean and were used by Indian, Muslim, and African traders.",
+		"The Dhow has a triangluar sail and is held together by coir, rope from southern India. This way, they would not break easily in shallow water. They were used all over the Indian Ocean and were used by Indian, Muslim, and African traders.",
 		x: 45,
 		y: 25,
 		percentsize: 4,
@@ -110,7 +112,7 @@ var data = [
 	{
 		type: "Invention",
 		svg: "invention",
-		name: "Woodtz Steel",
+		name: "Wootz Steel",
 		description:
 		"Iron is a very hard metal, but it has some downsides. For one, it is very brittle or easily broken. Iron is similar to other metals, such as gold, silver, tin, and copper for its need for extreme heat. This required technology for making longer and hotter fires, which caused a lot of experimentation, eventually leading to the invention of steel. To make steel, people had to develop a special way of creating iron. They had to add certain pieces to the recipe, resulting in a more heated iron that’s fused with carbon particles. They then produced and exported blocks of steel to places like Persia and Damascus, which was then turned into blades. The steel was so fine and amazing that many people in the 12th century commented on the steel being impossible to surpass in terms of its sharpness and edge. ",
 		x: 58,
@@ -315,12 +317,15 @@ function update() {
 	}
 	if (numberConverted > 1450) {
 		map.innerHTML =
-		'<img src="world.svg"></img>'
+		'<img src="world.svg">'
+		map.innerHTML +=
+		'<div class="mapitem" style="position:absolute; top: 0%; left: 0%; width: 100%; height: auto; z-index: 1000;"><img src="worldmodern.svg"></div>'
+
 		output.innerHTML = "Present Day"
 		title.innerHTML = "Present Day"
 		time.innerHTML = "Right Now!"
-		type.innerHTML = "Time Period"
-		about.innerHTML = ""
+		type.innerHTML = "You've reached the end of the timeline!"
+		about.innerHTML = "Today, maritime trade in the Indian Ocean is not very active, with more modern goods, such as oil, that wasn’t used in historical times, and much more advanced technology than before, such as better ships, that are traded across the route. The main challenge that faces maritime trade is disputes between regions, which makes trading far more difficult. Trade can now happen through the Suez Canal in Egypt. This allows for ships to travel between Asia and Europe without having going around Africa, which takes longer."
 		abouttext.innerHTML = ""
 	} else if (title.innerHTML == "Present Day") {
 		title.innerHTML = ""
