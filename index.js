@@ -83,7 +83,7 @@ var data = [
 		start: 700,
 		name: "Calicut (Kozhikode)",
 		description:
-			"Calicut was one of the most important trading ports in India. It was the world's number one source of pepper. It was also known for \"calico\" cloth which is what made its English name. It was a major trading hub, with people from many different regions arriving there. This turned it into a unique place with people from all across the eastern world",
+			"Calicut was one of the most important trading ports in India. It was the world's number one source of pepper. It was also known for \"calico\" cloth which is what made its English name. It was a major trading hub, with people from many different regions arriving there. This turned it into a unique place with people from all across the eastern world.",
 		x: 57.5,
 		y: 37,
 		percentsize: 4,
@@ -156,7 +156,7 @@ var data = [
 		svg: "place",
 		name: "Canton (Guangzhou)",
 		description:
-		"Canton was an important port in Indian Ocean trade. A lot of silk was exported here to places like India and Africa. It also had a lot of cultures and religions and was full of different shrines and mosques",
+		"Canton was an important port in Indian Ocean trade. A lot of silk was exported here to places like India and Africa. It also had a lot of cultures and religions and was full of different shrines and mosques.",
 		x: 80,
 		y: 25,
 		percentsize: 4,
@@ -190,7 +190,7 @@ var data = [
 		svg: "goods",
 		name: "Ivory",
 		description:
-		"African Ivory was prized due to its large size and softness. It was traded all over the Indian Ocean and was used to carve many artifacts",
+		"African Ivory was prized due to its large size and softness. It was traded all over the Indian Ocean and was used to carve many artifacts.",
 		x: 25,
 		y: 60,
 		percentsize: 4,
