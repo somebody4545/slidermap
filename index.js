@@ -9,7 +9,7 @@ var data = [
 		start: 600, 
 		end: 1450,
 		description:
-			"The Indian Ocean Trade routes connected Southeast Asia, India, Arabia, and East Africa, beginning from the Post-Classical Era. It was possible due to the consistent monsoon winds in the area and grew because of the many merchants and cities. It contributed to the spread of trade, such as gold, spices, silk, and slaves, as well as the spread of different cultures from different parts of the world. This increased wealth and cultural awareness, establishing a cooperative relationship between numerous the places across the world, helping establish the world we live in today.",
+			"The Indian Ocean Trade routes connected Southeast Asia, India, Arabia, and East Africa, beginning from the Post-Classical Era. It was possible due to the consistent monsoon winds in the area and grew because of the many merchants and cities. It contributed to the spread of trade, such as gold, spices, silk, and slaves, as well as the spread of different cultures from different parts of the world. This increased wealth and cultural awareness, establishing a cooperative relationship between numerous the places across the world, helping establish the world we live in today. ",
 		x: 0,
 		y: 0,
 		percentsize: 100,
@@ -19,7 +19,7 @@ var data = [
 		svg: "monsoon",
 		name: "Monsoon Winds",
 		description:
-			"Monsoon winds in the Indian Ocean made traveling by boat easier. They go Northeast for half of the year, and Southwest for the other. This means that for most of the journey, ships don't have to deal with inconsistent wind.",
+			"Monsoon winds in the Indian Ocean made traveling by boat easier. They go Northeast for half of the year, and Southwest for the other. This means that for most of the journey, ships don't have to deal with inconsistent wind. <br><br>This caused a small challenge, as traders now had to wait for the winds to go the other direction before sailing back home. This meant round-trip voyages would take many months. Due to it lengthening time before leaving, it also helped with the spread of cultures, as they likely shared some of their own during their time there.",
 		x: 0,
 		y: 0,
 		percentsize: 100,
@@ -52,7 +52,7 @@ var data = [
 		start: 957,
 		name: "Kilwa Kisiwani",
 		description:
-		"Kilwa was one of the most important city states on the Swahili coast. They had a mixture of many cultures because of all the merchants coming to trade. They traded and exported many materials to numerous places, such as China and India. They traded gold, coconuts, copper iron, ivory, and much more from the interior, and imported cloth, porcelain, silk, cotton and jewels. Not long after, they grew very rich from all the taxes and trading through the Indian Ocean Trade routes. They reached their height between 1100-1500 CE, and by the late 1500, they were exporting around a ton of gold per year.",
+		"Kilwa was one of the most important city states on the Swahili coast. They had a mixture of many cultures because of all the merchants coming to trade. They traded and exported many materials to numerous places, such as China and India. They traded gold, coconuts, copper iron, ivory, and much more from the interior, and imported cloth, porcelain, silk, cotton and jewels. Not long after, their economy grew and they became very rich from all the taxes and trading through the Indian Ocean Trade routes. They reached their height between 1100-1500 CE, and by the late 1500, they were exporting around a ton of gold per year.",
 		x: 33,
 		y: 60,
 		percentsize: 4,
@@ -60,10 +60,9 @@ var data = [
 	{
 		type: "Place",
 		svg: "place",
-		start: 1400,
-		name: "Malacca",
+		name: "Strait of Malacca",
 		description:
-		"Malacca was a city on the Strait of Malacca. The Strait of Malacca was the easiest way to sail to the South China Sea. This means that Malacca was very important in trade as it connected the Indian Ocean to the South China Sea. Sailors all over the Indian Ocean and China came here to trade spices.",
+		"A narrow strait between Indonesia and Malaysia connecting the Indian Ocean and the South China Sea. It is a very strategic point as it is the most direct route from India to China.",
 		x: 75,
 		y: 44,
 		percentsize: 4,
@@ -84,7 +83,7 @@ var data = [
 		start: 700,
 		name: "Calicut (Kozhikode)",
 		description:
-			"Calicut was one of the most important trading ports in India. It was the world's number one source of pepper. It was also known for \"calico\" cloth which is what made its English name.",
+			"Calicut was one of the most important trading ports in India. It was the world's number one source of pepper. It was also known for \"calico\" cloth which is what made its English name. It was a major trading hub, with people from many different regions arriving there. This turned it into a unique place with people from all across the eastern world",
 		x: 57.5,
 		y: 37,
 		percentsize: 4,
@@ -94,7 +93,7 @@ var data = [
 		svg: "invention",
 		name: "Chinese Junk",
 		description:
-		"The junk is a type of ship that was invented in 200 BCE and perfected in the Song Dynasty. It was used for exploration, trade, war, and patrol. They were strong and heavy and usually very large.",
+		"The junk is a type of ship that was invented in 200 BCE and perfected in the Song Dynasty. It was used for exploration, trade, war, and patrol. They were strong and heavy and usually very large. One thing special about them is that their hulls had seperate watertight sections so if one part leaked the ship would not sink. They were also made of a tropical wood that wouldn't rot.They could carry almost 1000 tons of cargo.",
 		x: 85,
 		y: 25,
 		percentsize: 4,
@@ -104,7 +103,7 @@ var data = [
 		svg: "invention",
 		name: "Arab Dhow",
 		description:
-		"The Dhow has a triangluar sail and is held together by coir, rope from southern India. This way, they would not break easily in shallow water. They were used all over the Indian Ocean and were used by Indian, Muslim, and African traders.",
+		"The Dhow has a triangluar sail and is held together by coir, rope from southern India. This way, they would not break easily in shallow water. They were used all over the Indian Ocean and were used by Indian, Muslim, and African traders. They were made with planks that were side by side which made it more smooth in the water. Eventually they also got rudders instead of oars. These ships could carry up to 100 to 400 tons of cargo",
 		x: 45,
 		y: 25,
 		percentsize: 4,
@@ -133,8 +132,8 @@ var data = [
 	{
 		type: "Person",
 		svg: "person",
-		name: "Zheng He and his Expedition",
-		start: 1405,
+		name: "Zheng He",
+		start: 1371,
 		end: 1433,
 		description:
 		"He was a trusted official of the Chinese ruler at the time of the Ming Dynasty, Emperor Zhu Di. He was commanded by the emperor to project the power of China by going on expeditions. He was of Muslim heritage, and contributed much to the Indian Ocean trade with his expeditions, and in his lifetime, he made 7 expeditions around the China Sea and the Indian Ocean. His expedition party consisted of 62 ships and 27, 800 people The first expedition went to Java, Semudra, Aceh, Sri Lanka, and Calicut, the second went to Thailand, Java, Aru, Aceh, Coimbatore, Cochin, and Calicut. The fleet of ships sought trade, learned of other cultures, fought pirates, and exchanged Chinese goods. These missions also effected the extension of China’s political sway over maritime trade for a long period of time.",
@@ -150,6 +149,70 @@ var data = [
 		"Cambay, in Gujarat, was a location where many widely traveled sailors came from. It was one of the many important trading centers in the Indian Ocean, especially during the post-classical era.",
 		x: 54,
 		y: 26,
+		percentsize: 4,
+	},
+	{
+		type: "Place",
+		svg: "place",
+		name: "Canton (Guangzhou)",
+		description:
+		"Canton was an important port in Indian Ocean trade. A lot of silk was exported here to places like India and Africa. It also had a lot of cultures and religions and was full of different shrines and mosques",
+		x: 80,
+		y: 25,
+		percentsize: 4,
+	},
+	{
+		type: "Person",
+		svg: "person",
+		name: "Ibn Battuta",
+		start: 1304,
+		end: 1369,
+		description:
+		"A Muslim scholar who decided to make the hajj. This started a journey which lasted over 30 years. He traveled from Europe to China and stopped in places like Kilwa on the African coast and Calicut. He wrote an account of his travels called The Rihlah.",
+		x: 5,
+		y: 10,
+		percentsize: 4,
+	},
+	{
+		type: "Person",
+		svg: "person",
+		name: "Marco Polo",
+		start: 1254,
+		end: 1324,
+		description:
+		"An Italian who spent 20 years traveling in China. His accounts are credited for introducing European eyes to East Asia.",
+		x: 15,
+		y: 5,
+		percentsize: 4,
+	},
+	{
+		type: "Goods",
+		svg: "goods",
+		name: "Ivory",
+		description:
+		"African Ivory was prized due to its large size and softness. It was traded all over the Indian Ocean and was used to carve many artifacts",
+		x: 25,
+		y: 60,
+		percentsize: 4,
+	},
+	{
+		type: "Goods",
+		svg: "goods",
+		name: "Pepper",
+		description:
+		"Pepper was a very important and valued spice. It was very expensive and a laborer would need to work a week to get a pound of it. It was used to add flavor to food and hide the flavor of spoiled food. It was also used as a medicine for colds.",
+		x: 58,
+		y: 25,
+		percentsize: 4,
+	},
+	{
+		type: "Invention",
+		svg: "invention",
+		name: "Compass",
+		description:
+		"The compass was a very important invention in ocean trade as it allowed for better and safer travel. It would always point north which allowed for easier navigation in the Indian Ocean.",
+		x: 80,
+		y: 20,
 		percentsize: 4,
 	},
 ];
