@@ -325,8 +325,7 @@ function update() {
 		title.innerHTML = "Present Day"
 		time.innerHTML = "Right Now!"
 		type.innerHTML = "You've reached the end of the timeline!"
-		about.innerHTML = `Today, maritime trade in the Indian Ocean is not very active, with more modern goods, such as oil, that wasn’t used in historical times, and much more advanced technology than before, such as better ships, that are traded across the route. The main challenge that faces maritime trade is disputes between regions, which makes trading far more difficult.
-		Trade can now happen through the Suez Canal in Egypt. This allows for ships to travel between Asia and Europe without having going around Africa, which takes longer.`
+		about.innerHTML = `Today, maritime trade in the Indian Ocean is not very active, with more modern goods, such as oil, that wasn’t used in historical times, and much more advanced technology than before, such as better ships, that are traded across the route. The main challenge that faces maritime trade is disputes between regions, which makes trading far more difficult. <br>Trade can now happen through the Suez Canal in Egypt. This allows for ships to travel between Asia and Europe without having going around Africa, which takes longer.`
 		abouttext.innerHTML = ""
 	} else if (title.innerHTML == "Present Day") {
 		title.innerHTML = ""
