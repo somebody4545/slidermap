@@ -3,11 +3,21 @@
 
 var data = [
 	{
+		type: "Routes",
+		svg: "traderoutes",
+		name: "Indian Ocean Trade Routes",
+		description:
+			"All the common trade routes across the Indian Ocean during this time period",
+		x: 0,
+		y: 0,
+		percentsize: 100,
+	},
+	{
 		type: "Nature",
 		svg: "monsoon",
 		name: "Monsoon Winds",
 		description:
-			"Monsoon winds in the Indian Ocean made travelling by boat easier",
+			"Monsoon winds in the Indian Ocean made traveling by boat easier. They go Northeast for half of the year, and Southwest for the other. This means that for most of the journey, ships don't have to deal with inconsistent wind.",
 		x: 0,
 		y: 0,
 		percentsize: 100,
@@ -18,7 +28,29 @@ var data = [
 		start: 365,
 		name: 'Swahili Coast',
 		description:
-			"Swahili was group of city-states that ranged from Sofla to Mogadishu, which is modern day Mozambique and Somalia. Swahili dominated the east coast, and by the 10th century, Swahili society attracted many of the Muslim merchants. However, they rarely had control of places outside the city. Most goods came from the interior and the cities were independent. The Swahili coast was very involved in the Indian-Ocean Trade, allowing there to be cultural exchange through food, dress, architecture, religion, language, and much more through trade.",
+			"Swahili means \"coasters\" and they lived on the east coast of Africa. The Swahili coast was very involved in the Indian-Ocean Trade, allowing there to be cultural exchange through food, dress, architecture, religion, language, and much more. By the 10th Century, trade had made the Swahili cities very rich, and they ranged from Sofla to Mogadishu, which is modern day Mozambique and Somalia. These cities were independent from each other.",
+		x: 32,
+		y: 62,
+		percentsize: 4,
+	},
+	{
+		type: "Place",
+		svg: "place",
+		start: 500,
+		name: "Zimbabwe",
+		description:
+		"Zimbabwe was in the African Interior. It’s name means “dwelling of a chief”. Zimbabwe was a city that controlled the flow of gold, ivory and slaves. These materials were sent to the coast and then sold to places like India, Southeast Asia, and China. It also taxed trade between the interior and costal regions of Africa which allowed it to gain a lot of wealth.",
+		x: 26,
+		y: 65,
+		percentsize: 4,
+	},
+	{
+		type: "Place",
+		svg: "place",
+		start: 957,
+		name: "Kilwa Kisiwani",
+		description:
+		"Kilwa was one of the most important city states on the Swahili coast. They had a mixture of many cultures because of all the merchants coming to trade. They traded and exported many materials to numerous places, such as China and India. They traded gold, coconuts, copper iron, ivory, and much more from the interior, and imported cloth, porcelain, silk, cotton and jewels. Not long after, they grew very rich from all the taxes and trading through the Indian Ocean Trade routes. They reached their height between 1100-1500 CE, and by the late 1500, they were exporting around a ton of gold per year.",
 		x: 33,
 		y: 60,
 		percentsize: 4,
@@ -26,33 +58,117 @@ var data = [
 	{
 		type: "Place",
 		svg: "place",
-		start: 1100,
-		name: "Zimbabwe",
+		start: 1400,
+		name: "Malacca",
 		description:
-		"Much like other cities, Great Zimbabwe",
-		x: 26,
-		y: 65,
+		"Malacca was a city on the Strait of Malacca. The Strait of Malacca was the easiest way to sail to the South China Sea. This means that Malacca was very important in trade as it connected the Indian Ocean to the South China Sea. Sailors all over the Indian Ocean and China came here to trade spices.",
+		x: 75,
+		y: 44,
+		percentsize: 4,
+	},
+	{
+		type: "Goods",
+		svg: "goods",
+		name: "Coir",
+		description:
+		"Coir is a type of very strong rope that is made from the fibers of coconut palm. It is extracted from the husk of the coconut, which must be separated from the fruit via retting, which is burying it in the earth to rot. Next, it is beaten to separate the fibers, then washed and dried. Coir has many uses, but it is seen as very important mostly because of its strength for making ropes and the resistance of rotting in water. The ropes’ thickness ranges from being as thick as a finger to as thick as a person’s arm. Because of this, it can be used to carry very heavy weights. It will also be used for fishnets, as it doesn’t rot in water. Additionally, coir was very beneficial for navigating the Indian Ocean. It helped lift the sails needed for navigating and moving the ship, and were used in place of nails to hold the planks on the ship together. This was very important to the Indian Ocean trade, as coir didn’t rust in the ocean like nails, allowing for more flexibility throughout stormy and shallow waters.",
+		x: 58,
+		y: 34,
+		percentsize: 4,
+	},
+	{
+		type: "Place",
+		svg: "place",
+		start: 700,
+		name: "Calicut (Kozhikode)",
+		description:
+			"Calicut was one of the most important trading ports in India. It was the world's number one source of pepper. It was also known for \"calico\" cloth which is what made its English name.",
+		x: 57.5,
+		y: 37,
+		percentsize: 4,
+	},
+	{
+		type: "Invention",
+		svg: "invention",
+		name: "Chinese Junk",
+		description:
+		"The junk is a type of ship that was invented in 200 BCE and perfected in the Song Dynasty. It was used for exploration, trade, war, and patrol. They were strong and heavy and usually very large.",
+		x: 85,
+		y: 25,
+		percentsize: 4,
+	},
+	{
+		type: "Invention",
+		svg: "invention",
+		name: "Arab Dhow",
+		description:
+		"The Dhow has a triangluar sail and is held together by coir. This way, they would not break easily in shallow water. They were used all over the Indian Ocean and were used by Indian, Muslim, and African traders.",
+		x: 45,
+		y: 25,
+		percentsize: 4,
+	},
+	{
+		type: "Invention",
+		svg: "invention",
+		name: "Woodtz Steel",
+		description:
+		"Iron is a very hard metal, but it has some downsides. For one, it is very brittle or easily broken. Iron is similar to other metals, such as gold, silver, tin, and copper for its need for extreme heat. This required technology for making longer and hotter fires, which caused a lot of experimentation, eventually leading to the invention of steel. To make steel, people had to develop a special way of creating iron. They had to add certain pieces to the recipe, resulting in a more heated iron that’s fused with carbon particles. They then produced and exported blocks of steel to places like Persia and Damascus, which was then turned into blades. The steel was so fine and amazing that many people in the 12th century commented on the steel being impossible to surpass in terms of its sharpness and edge. ",
+		x: 58,
+		y: 30,
+		percentsize: 4,
+	},
+	{
+		type: "Disease",
+		svg: "virus",
+		name: "Bubonic Plague",
+		start: 1330,
+		description:
+		"The Bubonic Plague, also known as the “Black Death” was an epidemic that originated in east-central Asia, sometime around the 1330s. The plague ended up in Europe and China, and due to China’s trade routes through the Indian Ocean, the Middle East, and South Asia also experienced some cases. It still exists to this day, but is extremely uncommon now.",
+		x: 50,
+		y: 50,
+		percentsize: 20,
+	},
+	{
+		type: "Person",
+		svg: "person",
+		name: "Zheng He and his Expedition",
+		start: 1405,
+		end: 1433,
+		description:
+		"He was a trusted official of the Chinese ruler at the time of the Ming Dynasty, Emperor Zhu Di. He was commanded by the emperor to project the power of China by going on expeditions. He was of Muslim heritage, and contributed much to the Indian Ocean trade with his expeditions, and in his lifetime, he made 7 expeditions around the China Sea and the Indian Ocean. His expedition party consisted of 62 ships and 27, 800 people The first expedition went to Java, Semudra, Aceh, Sri Lanka, and Calicut, the second went to Thailand, Java, Aru, Aceh, Coimbatore, Cochin, and Calicut. The fleet of ships sought trade, learned of other cultures, fought pirates, and exchanged Chinese goods. These missions also effected the extension of China’s political sway over maritime trade for a long period of time.",
+		x: 72,
+		y: 22,
+		percentsize: 4,
+	},
+	{
+		type: "Place",
+		svg: "place",
+		name: "Cambay (Modern day Khambat)",
+		description:
+		"Cambay, in Gujarat, was a location where many widely traveled sailors came from. It was one of the many important trading centers in the Indian Ocean, especially during the post-classical era.",
+		x: 54,
+		y: 26,
 		percentsize: 4,
 	},
 ];
 
 
 var svgs = {
-	"person": `<svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-		width="100%" height="100%" viewBox="0 0 579.698 579.698"
-		xml:space="preserve">
-		<g>
-		<g>
-		   <path d="M63.671,428.914v113.088c0,20.836,16.86,37.696,37.696,37.696h376.964c20.836,0,37.696-16.86,37.696-37.696V428.914
-			   c0-62.47-50.578-113.089-113.088-113.089h-9.667c-5.07,0-9.134,4.122-9.62,9.168c-4.611,47.751-44.845,85.074-93.805,85.074
-			   s-89.193-37.323-93.801-85.074c-0.486-5.046-4.55-9.168-9.621-9.168h-9.667C114.323,315.825,63.671,366.444,63.671,428.914z"/>
-		   <path d="M289.848,309.938c74.875,0,135.598-69.389,135.598-154.971S364.723,0,289.848,0S154.25,69.388,154.25,154.971
-			   C154.25,240.553,214.973,309.938,289.848,309.938z M289.848,154.971c35.377,0,64.888-17.895,74.192-42.222
-			   c13.924,16.778,22.663,38.06,22.663,61.595c0,53.498-43.397,96.855-96.855,96.855c-53.498,0-96.855-43.357-96.855-96.855
-			   C192.993,150.809,254.471,154.971,289.848,154.971z"/>
-		</g>
-		</g>
-		</svg>`,
+	"person": `<svg height="100%" width="100%" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	viewBox="0 0 512 512"  xml:space="preserve">
+<style type="text/css">
+   .st0{fill:#000000;}
+</style>
+<g>
+   <path class="st0" d="M359.51,367.614c-19.106-7.148-40.877-18.276-40.877-32.676c0-9.533,0-21.444,0-37.782
+	   c6.996-19.393,17.51-20.781,22.768-50.546c12.254-4.379,19.258-11.384,28.009-42.026c6.574-23.064-3.112-29.254-9.382-30.905
+	   c0.128-1.229,0.256-2.466,0.359-3.917c2.369-34.543,22.425-137.078-47.012-149.332c-18.38-14.296-30.043-20.774-69.437-18.38
+	   C219.001,2.042,200.046,7.547,173.632,0c-35.245,29.565-25.561,126.66-20.63,173.504c-6.199,1.388-16.889,7.148-10.052,31.08
+	   c8.744,30.641,15.748,37.646,28.001,42.026c5.258,29.765,21.252,39.322,22.417,50.546c0,16.338,0,28.248,0,37.782
+	   c0,14.4-23.494,26.55-40.877,32.676C119.058,379.397,25.911,414.275,34.073,512h443.856
+	   C486.09,414.275,392.712,380.035,359.51,367.614z"/>
+</g>
+</svg>`,
 	"virus": `<svg width="100%" height="100%" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 		viewBox="0 0 32.738 32.738" xml:space="preserve">
    <g>
@@ -89,10 +205,51 @@ var svgs = {
    </g>
    </svg>`,
 	"monsoon": `<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%"><defs><style>.cls-1{fill:#ef3d3b;}.cls-2{stroke:#ef3d3b;}.cls-2,.cls-3{fill:none;stroke-miterlimit:10;stroke-width:4px;}.cls-3{stroke:#0011d4;}.cls-4{fill:#0011d4;}</style></defs><g><line class="cls-3" x1="400.95" y1="330.94" x2="434" y2="235.33"/><polygon class="cls-4" points="405.97 329.57 396.67 343.33 397.84 326.76 405.97 329.57"/></g><g><line class="cls-3" x1="436.62" y1="328.67" x2="466" y2="262"/><polygon class="cls-4" points="441.74 327.72 431.33 340.67 433.87 324.25 441.74 327.72"/></g><g><line class="cls-3" x1="504.03" y1="325.09" x2="540" y2="231.33"/><polygon class="cls-4" points="509.09 323.89 499.33 337.33 501.07 320.81 509.09 323.89"/></g><g><line class="cls-2" x1="409.6" y1="212.46" x2="358.67" y2="317.33"/><polygon class="cls-1" points="404.46 213.22 415.33 200.67 412.19 216.98 404.46 213.22"/></g><g><line class="cls-2" x1="453.69" y1="258.16" x2="408" y2="341.33"/><polygon class="cls-1" points="448.51 258.66 460 246.67 456.04 262.8 448.51 258.66"/></g><g><line class="cls-2" x1="554.71" y1="241.17" x2="524.67" y2="336"/><polygon class="cls-1" points="549.72 242.66 558.67 228.67 557.92 245.26 549.72 242.66"/></g></svg>`,
-	"place": `<svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-	<path fill-rule="evenodd" clip-rule="evenodd" d="M10 11.5C11.933 11.5 13.5 9.933 13.5 8C13.5 6.067 11.933 4.5 10 4.5C8.067 4.5 6.5 6.067 6.5 8C6.5 9.933 8.067 11.5 10 11.5ZM10 6.5C10.8284 6.5 11.5 7.17157 11.5 8C11.5 8.82843 10.8284 9.5 10 9.5C9.17157 9.5 8.5 8.82843 8.5 8C8.5 7.17157 9.17157 6.5 10 6.5Z" fill="#000000"/>
-	<path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 8.12313C2.5 12.3656 6.88183 19.5 10 19.5C13.1182 19.5 17.5 12.3656 17.5 8.12313C17.5 3.91715 14.1464 0.5 10 0.5C5.85362 0.5 2.5 3.91715 2.5 8.12313ZM15.5 8.12313C15.5 11.4027 11.7551 17.5 10 17.5C8.24487 17.5 4.5 11.4027 4.5 8.12313C4.5 5.0134 6.96668 2.5 10 2.5C13.0333 2.5 15.5 5.0134 15.5 8.12313Z" fill="#000000"/>
+	"place": `<svg width="100%" height="100%" viewBox="-3 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <title>pin_fill_sharp_circle [#634]</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+
+</defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dribbble-Light-Preview" transform="translate(-223.000000, -5399.000000)" fill="#000000">
+            <g id="icons" transform="translate(56.000000, 160.000000)">
+                <path d="M174,5248.219 C172.895,5248.219 172,5247.324 172,5246.219 C172,5245.114 172.895,5244.219 174,5244.219 C175.105,5244.219 176,5245.114 176,5246.219 C176,5247.324 175.105,5248.219 174,5248.219 M174,5239 C170.134,5239 167,5242.134 167,5246 C167,5249.866 174,5259 174,5259 C174,5259 181,5249.866 181,5246 C181,5242.134 177.866,5239 174,5239" id="pin_fill_sharp_circle-[#634]">
+
+</path>
+            </g>
+        </g>
+    </g>
+</svg>`,
+	"invention": `<svg width="100%" height="100%" viewBox="0 0 16 16" xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" id="svg6190" version="1.1"><metadata id="metadata6196"><rdf:RDF><cc:Work><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/><dc:title/><dc:date>2021</dc:date><dc:creator><cc:Agent><dc:title>Timothée Giet</dc:title></cc:Agent></dc:creator><cc:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/"/></cc:Work><cc:License rdf:about="http://creativecommons.org/licenses/by-sa/4.0/"><cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/><cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/><cc:requires rdf:resource="http://creativecommons.org/ns#Notice"/><cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"/><cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/><cc:requires rdf:resource="http://creativecommons.org/ns#ShareAlike"/></cc:License></rdf:RDF></metadata><defs id="defs6194"><linearGradient gradientTransform="translate(-4 4)" osb:paint="solid" id="linearGradient1163"><stop id="stop1161" offset="0" style="stop-color:#000000;stop-opacity:1"/></linearGradient></defs><path id="path1641" d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 2a6 6 0 0 1 6 6 6 6 0 0 1-6 6 6 6 0 0 1-6-6 6 6 0 0 1 6-6z" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:3.20000005;stroke-opacity:.55063291"/><rect style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4.45366764;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:3.20000005;stroke-opacity:.55063291" id="rect1152-3-5" width="2" height="14.370387" x="7" y="-15" transform="rotate(90)"/><rect style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4.45366764;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:3.20000005;stroke-opacity:.55063291" id="rect1152-3-5-3" width="2" height="14.370387" x="9.7678213" y="-4.1643934" transform="rotate(30)"/><rect style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4.45366764;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:3.20000005;stroke-opacity:.55063291" id="rect1152-3-5-3-6" width="2" height="14.370387" x="1.7678211" y="3.6504133" transform="rotate(-30)"/></svg>`,
+	"goods": `<svg fill="#000000" width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+	<title>gold-bar</title>
+	<path d="M11.652 19.245l-0.001-0.001-0.005-0.003zM30.671 16.098l-2.207-5.839-8.022-4.361-16.624 8.861-2.431 6.495 9.8 5.214 0.161-7.067-7.624-4.353 0.654 0.346-0.373-0.215 1.332 0.708-1.212-0.708 7.526 4.065 16.205-8.376-2.594 1.424 3.037-1.551-6.011 3.183-10.434 5.727-0.668 6.816 19.484-10.371zM11.976 17.206l-4.389-2.342 4.269 1.32 13.070-5.8-12.95 6.822z"></path>
 	</svg>`,
+	"traderoutes": `<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+	<defs>
+	  <style>
+		.traderouteline {
+		  fill: none;
+		  stroke: #000;
+		  stroke-miterlimit: 10;
+		  stroke-width: 5px;
+		  opacity: 0.6;
+		}
+	  </style>
+	</defs>
+	<polyline class="traderouteline" points="247.33 147.33 302.67 236 405.33 178.67 358.49 145.5 342.67 152 315.46 124.03"/>
+	<polyline class="traderouteline" points="405.33 178.67 277.53 332.11 286.67 405.33 256.67 424.67"/>
+	<polyline class="traderouteline" points="281.21 361.6 340.67 377.33 346 444 362 435.33"/>
+	<line class="traderouteline" x1="277.53" y1="332.11" x2="467.17" y2="234.22"/>
+	<line class="traderouteline" x1="405.33" y1="178.67" x2="467.17" y2="234.22"/>
+	<path class="traderouteline" d="M347.72,210.84l119.45,23.38,6.83,43.78,117.33-10,36.67,41.33,42-136"/>
+	<polyline class="traderouteline" points="650.65 236 726 279.33 735.97 295.79 752.67 286.67 775.23 308"/>
+	<line class="traderouteline" x1="491.04" y1="236" x2="578.97" y2="272.72"/>
+	<path class="traderouteline" d="M540.52,272.33l112.81,103,64.67-6"/>
+	<line class="traderouteline" x1="630.37" y1="301.67" x2="690.38" y2="258.85"/>
+  </svg>`
 }
 
 
@@ -107,15 +264,9 @@ var title = document.getElementById("title");
 var time = document.getElementById("time");
 var type = document.getElementById("type");
 var about = document.getElementById("about");
-var firstColor = '#ffdd00'
-var secondColor = '#fc0000' //#8031ff is the purple one
 var noneColor = "#bdbdbd"
-var key = document.getElementById("key");
-var maxNumber = document.getElementById("maxnumber");
-var noneKey = document.getElementById("nonekey");
 var midNumber = document.getElementById("midnumber");
 var minNumber = document.getElementById("minnumber");
-var stateSize = 65755
 var keyRound = -1
 var populationElement = document.getElementById("population");
 var map = document.getElementById("map");
@@ -135,7 +286,7 @@ function getlength(number) {
 
 // Current data is a placeholder (not really anymore)
 slider.min = 300 / increment
-slider.max = 1500 / increment
+slider.max = 1451 / increment
 var dataLength = data.length;
 
 
@@ -145,11 +296,15 @@ function update() {
 	number = Math.round(number)
 	numberConverted = number * increment
 	index = number - slider.min
-	output.innerHTML = numberConverted
+	if (numberConverted < 600) {
+		output.innerHTML = numberConverted + " (Classical Era)"
+	} else {
+		output.innerHTML = numberConverted + " (Post-Classical Era)"
+	}
 	map.innerHTML =
 		'<img src="world.svg"></img>'
 	for (var i = 0; i < dataLength; i++) {
-		if ((data[i]['start'] <= numberConverted && data[i]['end'] >= numberConverted) || data[i]['start'] == null) {
+		if ((data[i]['start'] <= numberConverted) || data[i]['start'] == null) {
 			map.innerHTML +=
 				'<div class="mapitem" style="position:absolute; top: ' + data[i]['y'] + '%; left: ' + data[i]['x'] + '%; width: ' + data[i]['percentsize'] + '%; height: auto; z-index: 1000;" id="' + data[i]['name'] + '">' + svgs[data[i]['svg']] + '</div>'
 		} else if (data[i]['start'] <= numberConverted && data[i]['end'] == null) {
@@ -157,6 +312,22 @@ function update() {
 				'<div class="mapitem" style="position:absolute; top: ' + data[i]['y'] + '%; left: ' + data[i]['x'] + '%; width: ' + data[i]['percentsize'] + '%; height: auto; z-index: 1000;" id="' + data[i]['name'] + '">' + svgs[data[i]['svg']] + '</div>'
 		}
 
+	}
+	if (numberConverted > 1450) {
+		map.innerHTML =
+		'<img src="world.svg"></img>'
+		output.innerHTML = "Present Day"
+		title.innerHTML = "Present Day"
+		time.innerHTML = "Right Now!"
+		type.innerHTML = "Time Period"
+		about.innerHTML = ""
+		abouttext.innerHTML = ""
+	} else if (title.innerHTML == "Present Day") {
+		title.innerHTML = ""
+		time.innerHTML = ""
+		type.innerHTML = ""
+		about.innerHTML = ""
+		abouttext.innerHTML = abouttextinner
 	}
 	mapitems = document.getElementsByClassName("mapitem"); 
 	for (var i = 0; i < mapitems.length; i++) {
@@ -175,7 +346,7 @@ function update() {
 					gtags[e].addEventListener("click", function () {
 							title.innerHTML = this.data['name']
 							if (this.data['start'] == null) {
-								time.innerHTML = "Continuous"
+								time.innerHTML = "Before this era"
 							}
 							else if (this.data['end'] != null) {
 								time.innerHTML = '('+ this.data['start'] + "CE - " + this.data['end'] + "CE)"
@@ -186,6 +357,13 @@ function update() {
 							about.innerHTML = this.data['description']
 							abouttext.innerHTML = ""
 					})
+					if (data[p]['end'] != null) {
+						if (data[p]['end'] < numberConverted) {
+							console.log("hi")
+							gtags[e].style.fill = "#ff0000"
+							gtags[e].style.opacity = "0.6"
+						}
+					}
 				}
 			}
 			// )
@@ -193,7 +371,7 @@ function update() {
 	}
 	for (var i = 0; i < dataLength; i++) {
 		if (data[i]['name'] == title.innerHTML) {
-			if (data[i]['start'] > numberConverted || data[i]['end'] < numberConverted) {
+			if (data[i]['start'] > numberConverted) {
 				title.innerHTML = ""
 				time.innerHTML = ""
 				type.innerHTML = ""
@@ -227,12 +405,12 @@ slider.onchange = function () {
 document.onkeydown = function (event) {
 	switch (event.keyCode) {
 		case 37:
-			slider.value = slider.value - 1
+			slider.value = slider.value - 5
 			number = slider.value;
 			update()
 			break;
 		case 39:
-			slider.value = number + 1
+			slider.value = number + 5
 			number = slider.value;
 			update()
 			break;
@@ -240,5 +418,7 @@ document.onkeydown = function (event) {
 };
 
 onload = function () {
+	number = 600
+	slider.value = number
 	update()
 }
