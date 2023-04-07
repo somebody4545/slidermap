@@ -9,7 +9,7 @@ var data = [
 		start: 600, 
 		end: 1450,
 		description:
-			"All the common trade routes across the Indian Ocean during the Post-Classical time period",
+			"The Indian Ocean Trade routes connected Southeast Asia, India, Arabia, and East Africa, beginning from the Post-Classical Era. It was possible due to the consistent monsoon winds in the area and grew because of the many merchants and cities. It contributed to the spread of trade, such as gold, spices, silk, and slaves, as well as the spread of different cultures from different parts of the world. This increased wealth and cultural awareness, establishing a cooperative relationship between numerous the places across the world, helping establish the world we live in today.",
 		x: 0,
 		y: 0,
 		percentsize: 100,
@@ -325,7 +325,7 @@ function update() {
 		title.innerHTML = "Present Day"
 		time.innerHTML = "Right Now!"
 		type.innerHTML = "You've reached the end of the timeline!"
-		about.innerHTML = `Today, maritime trade in the Indian Ocean is not very active, with more modern goods, such as oil, that wasn’t used in historical times, and much more advanced technology than before, such as better ships, that are traded across the route. The main challenge that faces maritime trade is disputes between regions, which makes trading far more difficult. <br><br>Trade can now happen through the Suez Canal in Egypt. This allows for ships to travel between Asia and Europe without having going around Africa, which takes longer.`
+		about.innerHTML = "Today, maritime trade in the Indian Ocean is still active, with more modern goods, such as oil, that weren’t used in historical times. There is also much more advanced technology than before, such as massive cargo ships which are much better than dhows and junks. The main challenge that faces maritime trade are disputes between regions, which makes trading far more difficult. <br><br>Trade can now happen through the Suez Canal in Egypt. This allows for ships to travel between Asia and Europe without having going around Africa, which takes longer."
 		abouttext.innerHTML = ""
 	} else if (title.innerHTML == "Present Day") {
 		title.innerHTML = ""
