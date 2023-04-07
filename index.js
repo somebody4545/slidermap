@@ -5,7 +5,7 @@ var data = [
 	{
 		type: "Routes",
 		svg: "traderoutes",
-		name: "Indian Ocean Trade Routes",
+		name: "Indian Ocean Trade Routes", 
 		description:
 			"All the common trade routes across the Indian Ocean during the Post-Classical time period",
 		x: 0,
